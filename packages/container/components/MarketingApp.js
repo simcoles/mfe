@@ -3,7 +3,7 @@ import { mount } from "marketing/MarketingApp";
 
 const MarketingApp = (props) => {
   const ref = useRef(null);
-  // this will mount on first load
+
   useEffect(() => {
     mount(ref.current);
   }, []);
