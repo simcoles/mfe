@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
 import {
-  Stylesprovider,
+  StylesProvider,
   createGenerateClassName,
 } from "@material-ui/core/styles";
 import MarketingApp from "../components/MarketingApp";
@@ -13,10 +13,10 @@ export default () => {
   });
   return (
     <BrowserRouter>
-      <Stylesprovider generateClassName={generateClassName}>
+      <StylesProvider generateClassName={generateClassName}>
         <Header />
         <MarketingApp />
-      </Stylesprovider>
+      </StylesProvider>
     </BrowserRouter>
   );
 };
